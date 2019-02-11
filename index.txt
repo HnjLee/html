@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+</head>
+<body>
+
+<h1 align="center">This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<a align="left" href="https://www.daum.net" >This is a daum </a> <br>
+<a href="https://www.naver.com">This is a naver </a> <br>
+<img src="33.jpg" alt="harry potter" width="150" height="200">
+
+</body>
+</html>
