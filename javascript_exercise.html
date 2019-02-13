@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <base href="image/" target="_blank">
+    </head>
+    <body>
+        <div>
+            <h2 id="home" align="center">
+                <a href="index.html">
+                HOME click picture plz<br>
+                <img src="22.jpg" alt="11.jpg" style="width:120px;height:100px;border:2px solid salmon;">
+            </a></h2>
+            <h1 id="home" align="center"> javascript </h1>
+        </div>
+        <div>
+            <h1> Good Luck </h1>
+            <div>
+                <p id="demo" style="font-size:50px;" align="center">watch here! </p>
+                <img id="picture" src=gx.jpg height="300" style="float:right;"><br>
+                <button onmouseover="func1()">button1</button>
+                <button onmouseover="func2()">button2</button>
+                <script>
+                    demo=document.getElementById("demo")
+                    picture=document.getElementById("picture")
+                    function func1(){
+                        picture.src="cd.jpg"
+                        demo.innerHTML="button 1 click! YOU DIE!"
+                        demo.style.fontSize="50px"
+                        demo.style.color="black"
+                        demo.style.backgroundColor="purple"
+                    
+                    }
+                    function func2(){
+                        picture.src="hp.gif"
+                        demo.innerHTML="button 2 click! CONGRATUATIONS!"
+                        demo.style.fontSize="50px"
+                        demo.style.color="white"
+                        demo.style.backgroundColor="black"
+                        
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+
+</html>

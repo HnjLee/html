@@ -1,0 +1,70 @@
+h1 {color:rgb(212, 127, 212)}
+p { background-color:salmon;
+  color:white
+}
+#home {font-family: 'Courier New', Courier, monospace}
+a:link {
+  color:green;
+  background-color:transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+table, tr{
+  border:1px solid black;
+  text-align:center;
+  border-collapse:collapse;
+  width:700px;
+
+}
+th,td{
+  padding:10px;
+}
+td.c4, th.c4{
+  background-color: salmon;
+}
+td.down{
+  color:red;
+}
+td.up{
+  color:blue;
+}
+td.down-num{
+  background-color:red;
+  color:white;
+}
+td.up-num{
+  background-color:blue;
+  color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555353;
+}
