@@ -1,0 +1,66 @@
+https://www.w3schools.com/ 에 가면 모든 웹프로그래밍 공부를 할 수 있어.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Links</h2>
+<p>HTML links are defined with the a tag:</p>
+
+<a href="https://www.naver.com">This is a naver </a>
+<a href="https://www.naver.com">This is a naver </a>
+
+</body>
+</html>
+
+
+네이버로 갈 수 있음
+href a 태그의 속성
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+</body>
+</html>
+
+
+An Unordered HTML List
+Coffee
+Tea
+Milk
+An Ordered HTML List
+Coffee
+Tea
+Milk
+
+open tag + content + close tag : element
+<p> open tag (start
+</p> close tag (end
+<p> ... </p> content
+<p title>, <p style> attribute
+<p style="color:red"> color (property
+
+
+CSS adapt target 적용범위
+cascading style sheets
+inline > single element
+internal (.html) > document
+external (.html .css) > all document
+save workload
