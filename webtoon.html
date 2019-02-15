@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+		<style>
+			.webtoon{
+				float:left;
+				position:relative;
+				margin:5px;
+			}
+			.webtoon::after{
+				clear:both;
+			}
+			.webtoon img{
+				width:200px;
+			}
+			.webtoon .author{
+				font-weight:ligter;
+			}
+			.tag{
+				background-color:green;
+				color:white;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			.webtoon_intro{
+				position: absolute;
+				top: 0px;
+				left:0px;
+				color:white;
+			}
+			.webtoon_intro span{
+				position:absolute;
+				top: 8px;
+				left:16px;
+				font-size:18px;
+			}
+			.webtoon_intro span p{
+                position: absolute;
+                top: 60px;
+                left: 16px;
+                font-size: 14px;
+                text-decoration: underline;
+			}
+		</style>
+
+    </head>
+    <body>
+
+        <h1>webtoon </h1>
+		<div>
+			
+				<div class="webtoon">
+						<img src="image/00.png" style="width: 200px;height: 200px;">
+						<span class="webtoon_intro">웹툰</span>
+						<p class="webtoon_intro">매일 매일 새로운 재미<br>
+							네이버 웹툰 바로가기</p>
+					</div>
+
+			<div class="webtoon">
+				<img src="image/1.jpg" style="width: 200px;height: 200px;">
+				<p>미래가 자꾸만 달라져<br>
+					과거의 뭔가 잘못됐다
+				</p>
+				<p>SAVE ME BIG HITENT. /LICO</p>
+				<span class="tag">BU 만화</span>
+			</div>
+
+			<div class="webtoon">
+				<img src="image/2.jpg" style="width: 200px;height: 200px;">
+				<p>너를 낱낱이<br>
+					파헤쳐 줄 거야</p>
+				<p>좋아하는 부분  타리 </p>
+				<span class="tag">BU 만화</span>
+			</div>
+			<div class="webtoon">
+				<img src="image/3.jpg" style="width: 200px;height: 200px;">
+				<p>
+					나 걔 취향 한번<br>
+						지대로 캐볼라구 
+				</p>
+				<p>알고 있지만 정서</p>
+				<span class="tag">BU 만화</span>
+			</div>
+
+			<div class="webtoon">
+				<img src="image/4.jpg" style="width: 200px;height: 200px;">
+				<p>
+					도저히 안지 않고서는<br>
+						버틸 수 없는 상황이네요
+				</p>
+				<p>남자주인공의 여자사람친구</p>
+				<span class="tag">웹소설</span>
+			</div>
+		</div>
+    </body>
+</html>

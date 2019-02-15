@@ -68,3 +68,44 @@ li a {
 li a:hover {
   background-color: #555353;
 }
+
+.webtoon{
+  float:left;
+  position:relative;
+  margin:5px;
+}
+.webtoon::after{
+  clear:both;
+}
+.webtoon img{
+  width:200px;
+}
+.webtoon .author{
+  font-weight:ligter;
+}
+.tag{
+  background-color:green;
+  color:white;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.webtoon_intro{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  color:white;
+}
+.webtoon_intro span{
+  position:absolute;
+  top: 8px;
+  left:16px;
+  font-size:18px;
+}
+.webtoon_intro span p{
+          position: absolute;
+          top: 60px;
+          left: 16px;
+          font-size: 14px;
+          text-decoration: underline;
+}

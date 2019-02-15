@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2 id="home" align="center"><a href="index.html">
+               HOME click picture plz<br>
+              <img src="22.jpg" alt="11.jpg" style="width:120px;height:100px;border:2px solid salmon;">
+        </a></h2>
+
+        <script>
+
+            function Person(first, last, age, eye) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+                this.name = function() {return this.firstName + " " + this.lastName;};
+            }
+            var myFather = new Person("John", "Doe", 50, "blue");
+            var myMother = new Person("Sally", "Rally", 48, "green");
+
+            document.write("myFather"+myFather.name())
+            document.write("<br>")
+            document.write("myMother"+myMother.name())
+        </script>
+
+        <script>
+            function Webtoon(img,intro, author,tag){
+                this.img=img;
+                this.intro=intro;
+                this.author=author;
+                this.tag=tag;
+                this.render=function() {
+                    return "<div class='webtoon'>"+
+                            "<img src='"+ this.img+"  '>"+
+                            "<p class intro'>" +this.intro+
+                            "<p class='author'>" +this.author+"</p>"+
+                            "<span class='tag'>" +this.tag+"</span>"+
+                            "</div>"
+                };
+            };
+
+            var toon1=new Webtoon("image/1.jpg","미래가 자꾸만 달라져","SAVE ME BIG HITENT. /LICO","BU 만화");
+            var toon2=new Webtoon("image/2.jpg","너를 낱낱이","좋아하는 부분","웹소설");
+
+            document.write(toon1.render())
+            document.write(toon2.render())
+            
+        </script>
+
+
+
+
+    </body>
+
+</html>

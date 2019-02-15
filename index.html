@@ -2,8 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color:tomato;" "font-family:courier;">
+
 
 <h1 align="center" style="color:white";>This is a Heading</h1>
 <p>This is a paragraph.</p>
@@ -11,10 +13,51 @@
 <p align="right">
 <a href="https://www.daum.net" >다음으로 </a> <br>
 <a align="right" href="https://www.naver.com"> 네이버로 </a> <br>
+
+<ol>
+    <li><a href="page1.html" target="_blank">page1 </a> <br></li>
+    <li><a href="page2.html" target="_blank">page2 </a> <br></li>
+    <li><a href="page3.html" target="_blank">page3 </a> <br></li>
+    <li><a href="page4.html target="_blank"">page4 </a> <br></li>
+    <li><a href="image_gallery.html" target="_blank">imagegallery </a><br> </li>
+    <li><a href="layout.html" target="_blank">layout </a> <br></li>
+    <li><a href="table.html" target="_blank">table </a> <br></li>
+    <li><a href="javascript_exercise.html" target="_blank">javascript </a> <br></li>
+    <li><a href="youtube_video.html" target="_blank">youtube</a> <br></li>
+    <li><a href="icon.html" target="_blank">icon</a> <br></li>
+    <li><a href="webtoon.html" target="_blank">webtoon</a> <br></li>
+    <li><a href="javascript.html" target="_blank">javascript</a> <br></li>
+    <li><a href="object_constructor.html" target="_blank">object</a> <br></li>
+    <li><a href="ANI.html" target="_blank">ANI</a> <br></li>
+</ol>
+
 </p>
 <hr>
 
 <img src="33.jpg" alt="harry potter" width="150" height="200">
+
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
+    <script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+    </script>
 
 </body>
 </html>

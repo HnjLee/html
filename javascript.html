@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="myScript1.js"></script>
+        <script>
+                function click1(){
+                    document.getElementById("demo").innerHTML = "click1.";
+                }
+            </script>
+    </head>
+    <body>
+        <h2 id="home" align="center"><a href="index.html">
+               HOME click picture plz<br>
+              <img src="22.jpg" alt="11.jpg" style="width:120px;height:100px;border:2px solid salmon;">
+        </a></h2>
+        <h1> JAVASCRIPT </h1>
+
+
+
+        <p id="demo">버튼을 클릭하면 이 부분의 내용이 바뀌게 만들어주세요</p>
+
+        <button onclick="click1()">click1</button>
+        <button onclick="click2()">click2</button>
+        <button onclick="document.getElementById('demo').innerHTML = 'click3.';">click3</button>
+        <button onclick="display_alert('HTML 프론트 엔드')">경고창 띄우기</button>
+        <button onclick="display_alert('parameter pass')">경고창 띄우기</button>
+
+
+<!--        <script>
+            window.alert(5 + 6);
+        </script>
+-->
+
+    <p>
+        <script>
+            //js:object, java:map, python:dictionary
+            var person = {
+                firstName: "John",
+                lastName : "Doe",
+                id       : 5566,
+                fullName : function() {
+                return this.firstName + " " + this.lastName;
+                }
+            };
+
+            document.write(person.fullName())
+            document.write(person.lastName)
+            document.write(person.id)
+
+        </script>
+    </p>
+    <p>
+        <script>
+            var car ={
+                name : "Fiat",
+                model : 500,
+                weight : 850,
+                color : "white",
+                start : function(){
+                    return "<br>" + this.name+"차 "+this.model+"모델이 출발합니다";
+                }
+            };
+
+            document.write("차 이름 : "+ car.name)
+
+            document.write(car.start())
+
+
+        </script>
+    </p>
+
+    <p>
+            <script>
+                var toon1 ={
+                    img : "image/1.jpg",
+                    intro:"미래가 자꾸만 달라져",
+                    author: "SAVE ME BIG HITENT. /LICO",
+                    tag:"BU 만화",
+                    render : function(){
+                        return "<div class='webtoon'>"+
+                            "<img src='"+ this.img+"  '>"+
+                            "<p class intro'>" +this.intro+
+                            "<p class='author'>" +this.author+"</p>"+
+                            "<span class='tag'>" +this.tag+"</span>"+
+                            "</div>"
+
+                    }
+                };
+                document.write(toon1.render())
+        
+            </script>
+        </p>
+
+    </body>
+
+</html>
